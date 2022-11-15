@@ -38,12 +38,17 @@ tmap_mode("plot")
 tm_shape(World2) + 
   tm_polygons("diff", 
               style="jenks",
-              title="difference in inequality 2010-2019",
+              title="Difference in inequality 
+              2010-2019",
               palette="YlOrBr")+
   tm_layout(frame=FALSE, main.title = "Difference in gender inequality index\nSource: United Nations Development Programme (2022)",
             title.color = "grey",
-            title.position = c("left", "top"), title.bg.color = "White", 
+            title.position = c("left", "top"), 
+            title.bg.color = "White", 
             title.bg.alpha = (0.6), legend.position = c("left", "bottom"))
+            # legend.outside = T,
+            # legend.outside.position = "left")
+            #either new line for title text, or use these commented code for the legend outside the map in order to not block the map with the text
 
 
 
